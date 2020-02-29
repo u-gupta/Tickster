@@ -4,10 +4,10 @@ A Java based AI agent that accepts queries from a user and based on the answers 
 Compiling and running:
 - The code uses encog library so the file needs to be included in the classpath while compiling and running.
 - The code can be compiled using:
--javac <classpath> A4main.java
+-javac <classpath> Tickster.java
 - and can run with the following:
--java <classpath> A4main [any parameters]
-- EX: -java -cp “classpath” A4main Adv
+-java <classpath> Tickster [any parameters]
+- EX: -java -cp “classpath” Tickster Adv
 - Then just just the series of questions asked by the agent to get specific responses.
   
 Design:
@@ -21,7 +21,7 @@ prediction was.
 handle requests from the user and send it to the correct team that should handle
 the ticket.
 - System Architecture: The system has four classes:
-  - The main class handles the arguments provided to decide which agent to
+  - The main class (Tickster) handles the arguments provided to decide which agent to
 implement. According to the implemented agent, it calls the relevant class
 while taking some input from the user if necessary.
   - The Basic class creates the network (or takes it from input if provided on
